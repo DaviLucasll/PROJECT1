@@ -6,68 +6,72 @@
     text-decoration: none;
 }
 body{
-    position: relative;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    padding-bottom: 100px;
 }
 .hero-section{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8em 0;
+    background-color: #00ABE4;
 }
 .hero-text{
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #000;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .head-title{
-    font-size: 580%;
-    letter-spacing: 10px;
-    color: #00ABE4;
+    font-size: 8em;
+    letter-spacing: .625rem;
+    color: #fff;
 }
 .hero-text > p{
-    width: 400px;
+    max-width: 25em;
     text-align: center;
+    color: #fff;
 }
 .hero-button{
     padding: 1em 2em;
-    background: #00ABE4;
-    color: white;
+    background: #fff;
+    color: #00ABE4;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
     outline: transparent;
-    margin-top: 30px;
-    border-radius: 0.5em;
+    margin-top: 1.875rem;
+    border-radius: .625rem;
     border: transparent;
     transition: 200ms;
 }
 .hero-button:hover{
-    background-color: #00ABE4;
-    opacity: 0.8;
     transform: scale(1.1);
 }
+.hero-button:active{
+    opacity: 0.8;
+}
 .courses-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    background-color: #00ABE4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #006eff;
     padding: 8em 0;
 }
 .card-course{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    width: 300px;
+    gap: .625rem;
+    max-width: 18.75rem;
     border-radius: 10px;
-    background-color: white;
+    background: #fff;
+    background-size: 400%;
+    background-position: top;
 }
 .card-course-image{
-    height: 150px;
+    height: 9.375rem;
     border-radius: 10px;
     margin-top: 10px;
 }
@@ -76,17 +80,18 @@ body{
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
+    padding: 0 2rem;
 }
 .paragraph-title{
-    font-size: 20px;
-    font-weight: 600;
+    font-size:1.25rem;
+    font-weight: 500;
     letter-spacing: 3px;
     border-bottom: 1px solid #00ABE4;
 }
 .paragraph-description{
-    font-size: 14px;
+    font-size: 0.875rem;
     text-align: justify;
-    width: 250px;
+    max-width: 250px;
     margin-top: 10px;
 }
 .card-list{
@@ -105,4 +110,23 @@ body{
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+@media(min-width:900px){
+    .courses-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        row-gap: 2rem;
+        padding: 8em 10em;
+    }
+}
+@media(min-width:1280px){
+    .courses-section{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        row-gap: 2rem;
+        padding: 8em 1em;
+    }
 }
