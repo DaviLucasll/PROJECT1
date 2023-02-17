@@ -1,5 +1,7 @@
 .show-courses-section{
     display: flex;
+    flex-direction: column;
+    padding: 0 1.875rem;
 }
 .show-courses-btn{
     padding: .625em 1.875em;
@@ -12,4 +14,11 @@
 }
 .show-courses-btn:focus{
     border-bottom:3px solid blue;
+}
+.course-slide-txt{
+    font-size: 2rem;
+    max-width: 30em;
+} 
+.course-slide-txt:nth-child(0){
+    font-size: 1em;
 }

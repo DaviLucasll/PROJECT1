@@ -8,7 +8,6 @@ lightCourseBtn.addEventListener("click",()=>{
         <p>Você vai encontrar aulas para dominar HTML, CSS, JavaScript, HTTP, Forms, Ferramentas, DOM e muito mais.</p>
         <button>QUERO CONHECER</button>
         `
-    console.log("light")
 })
 
 cloudCourseBtn.addEventListener("click",()=>{
@@ -18,7 +17,6 @@ cloudCourseBtn.addEventListener("click",()=>{
     <p>Você vai encontrar aulas para dominar HTML, CSS, JavaScript, HTTP, Forms, Ferramentas, DOM e muito mais.</p>
     <button>QUERO CONHECER</button>
     `
-    console.log("cloud")
 })
 
 skyCourseBtn.addEventListener("click",()=>{
@@ -26,7 +24,6 @@ skyCourseBtn.addEventListener("click",()=>{
     lightCourseSlide.innerHTML = `
     <h1>Comece a programar do zero gratuitamente</h1>
     <p>Você vai encontrar aulas para dominar HTML, CSS, JavaScript, HTTP, Forms, Ferramentas, DOM e muito mais.</p>
-    <button>QUERO CONHECER</button>
+    <button class="course-slide-btn">QUERO CONHECER</button>
     `
-    console.log("sky")
 })
