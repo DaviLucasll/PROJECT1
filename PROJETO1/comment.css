@@ -42,6 +42,7 @@
     justify-content: center;
     align-items: center;
     background-color: #a7ccf7;
+    flex-shrink: 0;
 }
 .comment-perfil img{
     width: 4.4em;
