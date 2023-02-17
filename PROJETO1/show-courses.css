@@ -1,0 +1,15 @@
+.show-courses-section{
+    display: flex;
+}
+.show-courses-btn{
+    padding: .625em 1.875em;
+    font-size: 1.25rem;
+    color: #00f;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.show-courses-btn:focus{
+    border-bottom:3px solid blue;
+}
