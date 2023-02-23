@@ -6,8 +6,8 @@
 .show-courses-btn{
     padding: .625em 1.875em;
     font-size: 1.25rem;
-    color: #00f;
-    background-color: transparent;
+    color: #fff;
+    background-color: #00f;
     box-sizing: border-box;
     border: none;
     cursor: pointer;
@@ -18,6 +18,3 @@
 .course-slide-txt{
     max-width: 30em;
 } 
-.course-slide-txt:nth-child(0){
-    font-size: 1em;
-}
