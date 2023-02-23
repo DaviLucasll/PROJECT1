@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    background-color: #E9F1FA;
+    position: sticky;
+    top: 0;
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+    text-transform: uppercase;
+    display: none;
+}
+@media(min-width:500px){
+    .menu-list{
+        display: flex;
+        list-style: none;
+        gap: 5rem;
+        text-transform: uppercase;
+    }
+}
