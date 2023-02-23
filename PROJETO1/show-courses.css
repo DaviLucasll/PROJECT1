@@ -16,7 +16,6 @@
     border-bottom:3px solid blue;
 }
 .course-slide-txt{
-    font-size: 2rem;
     max-width: 30em;
 } 
 .course-slide-txt:nth-child(0){

@@ -14,4 +14,13 @@
     list-style: none;
     gap: 5rem;
     text-transform: uppercase;
+    display: none;
+}
+@media(min-width:500px){
+    .menu-list{
+        display: flex;
+        list-style: none;
+        gap: 5rem;
+        text-transform: uppercase;
+    }
 }

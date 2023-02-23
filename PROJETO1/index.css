@@ -8,8 +8,16 @@
 body{
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
+:root{
+    --fs-300: 0.875rem;
+    --fs-400: 1rem;
+    --fs-500: 1.25rem;
+    --fs-700: 1.875rem;
+    --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);
+}
 .hero-section{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 8em 0;
@@ -19,11 +27,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #000;
-    font-size: 1.25rem;
+    font-size: var(--fs-400);
 }
 .head-title{
-    font-size: 8em;
+    font-size: var(--fs-xl);
     letter-spacing: .625rem;
     color: #fff;
 }
@@ -31,13 +38,14 @@ body{
     max-width: 25em;
     text-align: center;
     color: #fff;
+    font-size: var(--fs-400);
 }
 .hero-button{
     padding: 1em 2em;
     background: #fff;
     color: #00ABE4;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: var(--fs-400);
     cursor: pointer;
     outline: transparent;
     margin-top: 1.875rem;
@@ -83,20 +91,20 @@ body{
     padding: 0 2rem;
 }
 .paragraph-title{
-    font-size:1.25rem;
+    font-size:var(--fs-500);
     font-weight: 500;
     letter-spacing: 3px;
     border-bottom: 1px solid #00ABE4;
 }
 .paragraph-description{
-    font-size: 0.875rem;
+    font-size: var(--fs-300);
     text-align: justify;
     max-width: 250px;
     margin-top: 10px;
 }
 .card-list{
     list-style: none;
-    font-size: 14px;
+    font-size: var(--fs-300);
     color: #00ABE4;
     margin-top: 10px;
 }
@@ -104,15 +112,21 @@ body{
     padding: 0.8em 2em;
     border: 1px solid #00ABE4;
     background: transparent;
-    font-size: 16px;
+    font-size: var(--fs-300);
     border-radius: 10px;
     box-sizing: border-box;
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 @media(min-width:900px){
+    :root{
+        --fs-300: 1rem;
+        --fs-400: 1.25rem;
+        --fs-500: 1.5rem;
+        --fs-700: 1.875rem;
+        --fs-xl: clamp(3.5rem, 12vw + 1rem, 8rem);
+    }
     .courses-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -128,5 +142,8 @@ body{
         justify-items: center;
         row-gap: 2rem;
         padding: 8em 1em;
+    }
+    .head-title{
+        font-size: 10rem;
     }
 }
