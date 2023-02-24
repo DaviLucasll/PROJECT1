@@ -98,16 +98,11 @@ body{
 }
 .paragraph-description{
     font-size: var(--fs-300);
-    text-align: justify;
+    text-align: center;
     max-width: 250px;
     margin-top: 10px;
 }
-.card-list{
-    list-style: none;
-    font-size: var(--fs-300);
-    color: #00ABE4;
-    margin-top: 10px;
-}
+
 .card-button{
     padding: 0.8em 2em;
     border: 1px solid #00ABE4;
@@ -129,7 +124,7 @@ body{
     }
     .courses-section{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         justify-items: center;
         row-gap: 2rem;
         padding: 8em 10em;
@@ -138,7 +133,7 @@ body{
 @media(min-width:1280px){
     .courses-section{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         justify-items: center;
         row-gap: 2rem;
         padding: 8em 1em;
