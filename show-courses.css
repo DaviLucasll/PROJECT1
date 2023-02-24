@@ -1,7 +1,12 @@
 .show-courses-section{
     display: flex;
     flex-direction: column;
-    padding: 0 1.875rem;
+    padding: 2.875rem 2.875rem;
+}
+.button-container{
+    display: flex;
+    gap: 1.875rem;
+    margin-bottom: 3rem;
 }
 .show-courses-btn{
     padding: .625em 1.875em;
@@ -11,10 +16,30 @@
     box-sizing: border-box;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    transition: 200ms;
 }
-.show-courses-btn:focus{
-    border-bottom:3px solid blue;
+.course-slide-headline,
+.course-slide-description{
+    margin-bottom: 1.875rem;
 }
-.course-slide-txt{
-    max-width: 30em;
-} 
+.course-slide-btn{
+    padding: 1.25em;
+    font-size: 1.25rem;
+    color: #fff;
+    background-color: #00f;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 200ms;
+    font-weight: 500;
+}
+.show-courses-btn:hover,
+.course-slide-btn:hover{
+    transform: scale(1.05);
+}
+.show-courses-btn:active,
+.course-slide-btn:active{
+    opacity: 0.8;
+}
