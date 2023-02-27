@@ -14,13 +14,23 @@
     list-style: none;
     gap: 5rem;
     text-transform: uppercase;
+}
+.mobile-menu{
     display: none;
 }
-@media(min-width:500px){
+@media(max-width:900px){
     .menu-list{
+        display: none;
+    }
+    .mobile-menu{
         display: flex;
-        list-style: none;
-        gap: 5rem;
-        text-transform: uppercase;
+        flex-direction: column;
+        gap: 0.5rem;
+        cursor: pointer;
+    }
+    .menu-options-hamburger{
+        height: 0.2em;
+        width: 3em;
+        background-color: #1558f4;
     }
 }
