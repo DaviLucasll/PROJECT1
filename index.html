@@ -12,19 +12,24 @@
 </head>
 <body>
     <header class="header">
-        <a href="/"><img src="" alt="">LOGO</a>
-            <nav class="menu-navigation">
-                <ul class="menu-list">
-                    <li><a href="/home" class="menu-options">Home</a></li>
-                    <li><a href="/abouts" class="menu-options">Abouts</a></li>
-                    <li><a href="/contacts" class="menu-options">Contacts</a></li>
-                </ul>
-                <div class="mobile-menu">
-                    <div class="menu-options-hamburger"></div>
-                    <div class="menu-options-hamburger"></div>
-                    <div class="menu-options-hamburger"></div>
-                </div>
-            </nav>
+        <a href="/" class="logo"><img src="" alt="">LOGO</a>
+        <nav class="menu-navigation">
+            <ul class="menu-list">
+                <li><a href="/home" class="menu-links">Home</a></li>
+                <li><a href="/abouts" class="menu-links">Abouts</a></li>
+                <li><a href="/contacts" class="menu-links">Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu">
+            <div class="menu-options-hamburger bar1"></div>
+            <div class="menu-options-hamburger bar2"></div>
+            <div class="menu-options-hamburger bar3"></div>
+            <ul class="mobile-menu-list">
+                <li class="mobile-options">Home</li>
+                <li class="mobile-options">Abouts</li>
+                <li class="mobile-options">Contacts</li>
+            </ul>
+        </div>
     </header>
     <main>
         <section class="hero-section">
@@ -149,5 +154,6 @@
         </section>
     </main>
     <script src="show-courses.js"></script>
+    <script src="options.js"></script>
 </body>
 </html>
