@@ -72,13 +72,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: .625rem;
     max-width: 18.75rem;
     border-radius: 10px;
     background: #fff;
-    background-size: 400%;
-    background-position: top;
+    min-height: 500px;
 }
+
 .card-course-image{
     height: 9.375rem;
     border-radius: 10px;
@@ -111,9 +112,10 @@ body{
     font-size: var(--fs-300);
     border-radius: 10px;
     box-sizing: border-box;
-    cursor: pointer;
     margin-top: 10px;
     margin-bottom: 10px;
+    white-space: nowrap;
+    color: #00ABE4;
 }
 @media(min-width:900px){
     :root{
@@ -133,13 +135,6 @@ body{
     }
 }
 @media(min-width:1280px){
-    .courses-section{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        row-gap: 2rem;
-        padding: 8em 1em;
-    }
     .head-title{
         font-size: 10rem;
     }
