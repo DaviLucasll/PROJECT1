@@ -129,6 +129,7 @@ body{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 8em 5em;
+        justify-items: center;
     }
     .hero-text > p{
         padding: 0;
