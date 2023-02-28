@@ -39,6 +39,7 @@ body{
     text-align: center;
     color: #fff;
     font-size: var(--fs-400);
+    padding: 0 1em;
 }
 .hero-button{
     padding: 1em 2em;
@@ -124,10 +125,11 @@ body{
     }
     .courses-section{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
-        row-gap: 2rem;
-        padding: 8em 10em;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 8em 5em;
+    }
+    .hero-text > p{
+        padding: 0;
     }
 }
 @media(min-width:1280px){

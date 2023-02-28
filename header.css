@@ -1,8 +1,8 @@
 .header{
     display: flex;
     justify-content: space-between;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2em;
+    padding-right: 2em;
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
     background-color: #E9F1FA;
@@ -12,7 +12,7 @@
 .menu-list{
     display: flex;
     list-style: none;
-    gap: 5rem;
+    gap: 3rem;
     text-transform: uppercase;
 }
 .logo,
@@ -21,6 +21,12 @@
 }
 .mobile-menu{
     display: none;
+}
+@media(min-width:600px){
+    .header{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
 }
 
 @media(max-width:900px){
@@ -40,13 +46,13 @@
         transition: 200ms;
     }
     .open .bar1{
-        transform: rotate(-45deg) translate(-6px, 6px);
+        transform: rotate(-45deg) translate(-8px, 7px);
     }
     .open .bar2{
         opacity: 0;
     }
     .open .bar3{
-        transform: rotate(45deg) translate(-6px, -8px);
+        transform: rotate(45deg) translate(-8px, -7px);
     }
     .mobile-menu-list{
         display: none;
@@ -57,7 +63,7 @@
         top: 73.56px;
         right: 0px;
         height: calc(100vh - 50px);
-        width: 50%;
+        width: 70%;
         background-color: white;
     }
 }
