@@ -18,9 +18,20 @@
 .logo,
 .menu-links{
     color: #605858;
+    transition: all 200ms;
 }
+.logo:hover,
+.menu-links:hover{
+    color: #00ABE4;
+}
+
 .mobile-menu{
     display: none;
+}
+@media(max-width:300px){
+    .mobile-menu-list{
+        width: 70%;
+    }
 }
 @media(min-width:600px){
     .header{
@@ -58,13 +69,13 @@
         display: none;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        list-style: none;
         position: absolute;
         top: 73.56px;
         right: 0px;
         height: calc(100vh - 50px);
-        width: 70%;
-        background-color: white;
+        width: 50%;
+        background-color: #E9F1FA;
     }
 }
 .display-flex{
