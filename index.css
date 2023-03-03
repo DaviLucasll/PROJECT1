@@ -1,20 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-body{
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-}
-:root{
-    --fs-300: 0.875rem;
-    --fs-400: 1rem;
-    --fs-500: 1.25rem;
-    --fs-700: 1.875rem;
-    --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);
-}
+
 .hero-section{
     display: flex;
     flex-direction: column;
