@@ -3,6 +3,10 @@
     flex-direction: column;
     padding: 2.875rem 2.875rem;
 }
+#course-slide{
+    display: flex;
+    margin-top: 2rem;
+}
 .button-container{
     display: flex;
     gap: 1.875rem;
@@ -35,10 +39,6 @@
     border-radius: 5px;
     transition: 200ms;
     font-weight: 500;
-}
-.show-courses-btn:hover,
-.course-slide-btn:hover{
-    transform: scale(1.05);
 }
 .show-courses-btn:active,
 .course-slide-btn:active{
