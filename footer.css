@@ -1,0 +1,12 @@
+#footer{
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.footer-top-side{
+    display: flex;
+}
+.footer-right-container{
+    display: flex;
+}
