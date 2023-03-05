@@ -12,7 +12,7 @@ skyCourseBtn.addEventListener("click",()=>{
         <button class="course-slide-btn">QUERO CONHECER</button>
     </div>
     <div class="course-slide-right">
-        <img src="coursesIllustrations/cloudIllustration.jpg" alt="Cloud Image" class="course-img">
+        <img src="coursesIllustrations/cloudIllustration.JPG" alt="Sky Image" class="course-img">
     </div>
     `
 })
@@ -44,7 +44,7 @@ starsCourseBtn.addEventListener("click",()=>{
         <button class="course-slide-btn">QUERO CONHECER</button>
     </div>
     <div class="course-slide-right">
-        <img src="coursesIllustrations/skyIllustration.jpg" alt="Sky Image" class="course-img">
+        <img src="coursesIllustrations/skyIllustration.jpg" alt="Stars Image" class="course-img">
     </div>
     `
 })
