@@ -44,15 +44,19 @@
 .footer-credits li{
     font-size: .625rem;
 }
+.line-styles{
+    height: 1px;
+    background-color: white;
+}
 @media(min-width:900px){
     .footer-styles-container{
-        width: 1120px;
         margin: 0 2rem;
     }
     .footer-top-side{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
         padding: 5rem 0;
     }
     .footer-right-container{
@@ -70,10 +74,14 @@
     }
 }
 @media(min-width:1280px){
+    #footer{
+        padding-bottom: 5rem;
+        height: 600px;
+    }
     .footer-styles-container{
-        width: 1120px;
-        min-width: 90%;
         margin: 0 2rem;
+        min-width: 1120px;
+        max-width: 1712px;
     }
     .img-styles img{
         width: 40px;
@@ -88,4 +96,10 @@
         color: white;
         border-radius: 5px;
     }
+    .footer-link-styles h4{
+        font-size: 1.25rem;
+    }
+}
+@media(min-width:1280px){
+    
 }

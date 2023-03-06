@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 .show-courses-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
 }
 #course-slide{
     margin-top: 2rem;
 }
+
 .button-container{
     display: flex;
     gap: 1.875rem;
@@ -13,7 +17,6 @@
 }
 .course-slide-left{
     margin-right: 2rem;
-    max-width: 50rem;
 }
 .course-slide-right{
     margin-top: 2rem;
@@ -44,8 +47,6 @@
     width: 25rem;
     min-width: 100%;
     max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
     object-fit: contain;
 }
 @media(max-width:660px){
@@ -55,11 +56,15 @@
 }
 @media(min-width:900px){
     .show-courses-section{
-        padding: 2.875rem;
+        height: 800px;
+        padding: 3rem 1rem;
     }
     #course-slide{
         display: flex;
         align-items: center;
+    }
+    .course-styles-container{
+        max-width: 1120px;
     }
     .button-container{
         display: flex;
@@ -70,27 +75,11 @@
         font-size: 2rem;
     }
     .course-img{
-        margin: 0;
-        min-height: 20rem;
-        min-width: 25rem;
-    }
-}
-@media(min-width:1280px){
-    .course-slide-left{
-        max-width: none;
-    }
-    .course-slide-right{
         min-width: 50%;
     }
-    .course-slide-headline{
-        font-size: 3rem;
-    }
-    .course-slide-description{
-        font-size: 1.25rem;
-    }
+}
+@media(min-width:900px) AND (max-width:1280px){
     .course-img{
-        min-width: 100%;
-        min-height: 100%;
-        object-fit: contain;
+        
     }
 }
