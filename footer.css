@@ -49,8 +49,16 @@
     background-color: white;
 }
 @media(min-width:900px){
+    #footer{
+        position: relative;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        max-height: max-content;
+    }
     .footer-styles-container{
         margin: 0 2rem;
+        
     }
     .footer-top-side{
         display: flex;
@@ -74,14 +82,9 @@
     }
 }
 @media(min-width:1280px){
-    #footer{
-        padding-bottom: 5rem;
-        height: 600px;
-    }
     .footer-styles-container{
         margin: 0 2rem;
         min-width: 1120px;
-        max-width: 1712px;
     }
     .img-styles img{
         width: 40px;
