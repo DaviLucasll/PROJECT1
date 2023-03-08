@@ -1,5 +1,4 @@
 .comments-section {
-  background-color: #a7ccf7;
   padding: 8em 0;
   display: flex;
   flex-direction: column;
@@ -43,7 +42,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #a7ccf7;
   flex-shrink: 0;
 }
 .comment-perfil img {
