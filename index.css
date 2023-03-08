@@ -91,6 +91,7 @@
 
 .card-button {
   padding: 0.8em 2em;
+  color: #fff;
   border: 1px solid #fff;
   background: transparent;
   font-size: var(--fs-300);
@@ -99,6 +100,40 @@
   margin-top: 10px;
   margin-bottom: 10px;
   white-space: nowrap;
+}
+.sky {
+  background-color: rgb(144, 216, 255);
+  border: 1px solid #00abe4;
+}
+.sky .paragraph-title {
+  color: #fff;
+  border-color: #00abe4;
+}
+.sky .card-button {
+  background-color: #00abe4;
+}
+.sun {
+  background-color: rgb(255, 255, 89);
+  border: 1px solid yellow;
+}
+.sun .paragraph-title {
+  color: black;
+  border-color: black;
+}
+.sun .card-button {
+  background-color: yellow;
+  border: 1px solid #fff;
+  color: black;
+}
+.stars {
+  background-color: rgb(255, 60, 60);
+}
+.stars .paragraph-title {
+  color: white;
+  border-color: red;
+}
+.stars .card-button {
+  background-color: rgb(255, 23, 23);
 }
 @media (min-width: 301px) {
   .card-text {
