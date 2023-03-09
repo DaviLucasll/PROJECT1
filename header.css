@@ -44,7 +44,7 @@
     cursor: pointer;
   }
   .menu-options-hamburger {
-    height: 2px;
+    height: 1px;
     width: 3em;
     background-color: #fff;
     transition: 200ms;
@@ -67,7 +67,7 @@
     top: 73.56px;
     right: 0px;
     height: calc(100vh - 50px);
-    width: 50%;
+    width: 70%;
     background-color: #655cdd54;
   }
 }

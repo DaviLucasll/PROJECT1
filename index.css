@@ -67,9 +67,7 @@
   display: none;
 }
 .card-course-image {
-  height: 9.375rem;
-  border-radius: 10px;
-  margin-top: 10px;
+  width: 12rem;
 }
 .card-text {
   display: flex;
