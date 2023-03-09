@@ -1,9 +1,9 @@
-const skyCourseBtn = document.querySelector("#sky-btn")
-const sunCourseBtn = document.querySelector("#sun-btn")
-const starsCourseBtn = document.querySelector("#stars-btn")
-skyCourseBtn.addEventListener("click",()=>{
-    const CourseSlide = document.querySelector("#course-slide")
-    CourseSlide.innerHTML = `
+const skyCourseBtn = document.querySelector("#sky-btn");
+const sunCourseBtn = document.querySelector("#sun-btn");
+const starsCourseBtn = document.querySelector("#stars-btn");
+skyCourseBtn.addEventListener("click", () => {
+  const CourseSlide = document.querySelector("#course-slide");
+  CourseSlide.innerHTML = `
     <div class="course-slide-left">
         <h1 class="course-slide-headline">Comece a programar do zero gratuitamente</h1>
         <p class="course-slide-description">
@@ -12,14 +12,14 @@ skyCourseBtn.addEventListener("click",()=>{
         <button class="course-slide-btn">QUERO CONHECER</button>
     </div>
     <div class="course-slide-right">
-        <img src="coursesIllustrations/cloudIllustration.JPG" alt="Sky Image" class="course-img">
+        <img src="imgs/pessoa 1.png" alt="Sky Image" class="course-img">
     </div>
-    `
-})
+    `;
+});
 
-sunCourseBtn.addEventListener("click",()=>{
-    const CourseSlide = document.querySelector("#course-slide")
-    CourseSlide.innerHTML = `
+sunCourseBtn.addEventListener("click", () => {
+  const CourseSlide = document.querySelector("#course-slide");
+  CourseSlide.innerHTML = `
     <div class="course-slide-left">
         <h1 class="course-slide-headline">Conquiste a sua primeira vaga</h1>
         <p class="course-slide-description">
@@ -28,14 +28,14 @@ sunCourseBtn.addEventListener("click",()=>{
         <button class="course-slide-btn">QUERO CONHECER</button>
     </div>
     <div class="course-slide-right">
-        <img src="coursesIllustrations/sunIllustration.jpg" alt="Sun Image" class="course-img">
+        <img src="imgs/pessoa 2.png" alt="Sun Image" class="course-img">
     </div>
-    `
-})
+    `;
+});
 
-starsCourseBtn.addEventListener("click",()=>{
-    const CourseSlide = document.querySelector("#course-slide")
-    CourseSlide.innerHTML = `
+starsCourseBtn.addEventListener("click", () => {
+  const CourseSlide = document.querySelector("#course-slide");
+  CourseSlide.innerHTML = `
     <div class="course-slide-left">
         <h1 class="course-slide-headline">Alcance o nível STARS como dev FrontEnd</h1>
         <p class="course-slide-description">
@@ -44,7 +44,7 @@ starsCourseBtn.addEventListener("click",()=>{
         <button class="course-slide-btn">QUERO CONHECER</button>
     </div>
     <div class="course-slide-right">
-        <img src="coursesIllustrations/skyIllustration.jpg" alt="Stars Image" class="course-img">
+        <img src="imgs/pessoa 3.png" alt="Stars Image" class="course-img">
     </div>
-    `
-})
+    `;
+});

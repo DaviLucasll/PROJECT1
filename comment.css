@@ -1,5 +1,5 @@
 .comments-section {
-  margin: 8rem 0;
+  margin: 16rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,8 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 2rem;
-  padding-left: 1.25rem;
+  margin: 0 1rem;
 }
 .comments-container-grid {
   display: flex;
@@ -73,7 +72,11 @@
   font-size: 0.9rem;
   color: #ccc;
 }
-
+@media (min-width: 300px) {
+  .comment-section-container {
+    margin: 0 2rem;
+  }
+}
 @media (min-width: 600px) {
   .comments-container-grid {
     display: grid;
