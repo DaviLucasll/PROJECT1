@@ -13,30 +13,29 @@
 }
 .head-title {
   font-size: var(--fs-xl);
-  color: #00abe4;
+  color: #fff;
 }
 .hero-text > p {
   max-width: 25em;
   text-align: center;
-  color: #00abe4;
+  color: #fff;
   font-size: var(--fs-400);
   padding: 0 1em;
 }
 .hero-button {
   padding: 1em 2em;
-  background: #00abe4;
+  background: #4ea4f5;
   color: #fff;
-  font-weight: bold;
   font-size: var(--fs-400);
   cursor: pointer;
   outline: transparent;
   margin-top: 1.875rem;
-  border-radius: 0.625rem;
+  border-radius: 50px;
   border: transparent;
   transition: 200ms;
 }
 .hero-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .hero-button:active {
   opacity: 0.8;
@@ -60,11 +59,13 @@
   justify-content: center;
   gap: 0.625rem;
   max-width: 18.75rem;
-  border-radius: 10px;
-  background: #00abe4;
+  border-radius: 50px;
+  background: #655cdd54;
   min-height: 500px;
 }
-
+.big-screens {
+  display: none;
+}
 .card-course-image {
   height: 9.375rem;
   border-radius: 10px;
@@ -80,60 +81,27 @@
   font-size: var(--fs-500);
   font-weight: 500;
   letter-spacing: 3px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #4ea4f5;
+  color: #fff;
 }
 .paragraph-description {
   font-size: var(--fs-300);
   text-align: center;
   max-width: 250px;
   margin-top: 10px;
+  color: #fff;
 }
 
 .card-button {
   padding: 0.8em 2em;
   color: #fff;
-  border: 1px solid #fff;
-  background: transparent;
+  background: #4ea4f5;
   font-size: var(--fs-300);
-  border-radius: 10px;
+  border-radius: 50px;
   box-sizing: border-box;
   margin-top: 10px;
   margin-bottom: 10px;
   white-space: nowrap;
-}
-.sky {
-  background-color: rgb(144, 216, 255);
-  border: 1px solid #00abe4;
-}
-.sky .paragraph-title {
-  color: #fff;
-  border-color: #00abe4;
-}
-.sky .card-button {
-  background-color: #00abe4;
-}
-.sun {
-  background-color: rgb(255, 255, 89);
-  border: 1px solid yellow;
-}
-.sun .paragraph-title {
-  color: black;
-  border-color: black;
-}
-.sun .card-button {
-  background-color: yellow;
-  border: 1px solid #fff;
-  color: black;
-}
-.stars {
-  background-color: rgb(255, 60, 60);
-}
-.stars .paragraph-title {
-  color: white;
-  border-color: red;
-}
-.stars .card-button {
-  background-color: rgb(255, 23, 23);
 }
 @media (min-width: 301px) {
   .card-text {
@@ -148,12 +116,43 @@
     --fs-700: 1.875rem;
     --fs-xl: clamp(3.5rem, 12vw + 1rem, 8rem);
   }
+  .big-screens {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
   .courses-section {
     padding: 8em 2em;
   }
   .courses-styles-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    align-items: normal;
+  }
+  .card-course {
+    flex-direction: row;
+    max-width: 1120px;
+  }
+  .card-course-image {
+    width: 50rem;
+    height: auto;
+    max-width: 100%;
+  }
+  .card-text {
+    gap: 1rem;
+  }
+  .paragraph-title {
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #4ea4f5;
+    color: #fff;
+  }
+  .paragraph-description {
+    font-size: var(--fs-300);
+    text-align: center;
+    max-width: none;
+    margin-top: 10px;
+    color: #fff;
   }
   .hero-text > p {
     padding: 0;

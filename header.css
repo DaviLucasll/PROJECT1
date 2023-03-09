@@ -5,7 +5,7 @@
   padding-right: 2em;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
-  background-color: #00abe4;
+  background-color: transparent;
 }
 .menu-list {
   display: flex;
@@ -15,12 +15,12 @@
 }
 .logo,
 .menu-links {
-  color: #605858;
+  color: #fff;
   transition: all 200ms;
 }
 .logo:hover,
 .menu-links:hover {
-  color: #fffdfa;
+  color: #fff;
 }
 .mobile-menu {
   display: none;
