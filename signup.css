@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container-layout-styles {
+  min-height: 100vh;
+  background: linear-gradient(133.92deg, #1e3a8a 16.35%, #4ea4f5 72.83%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  padding: 1rem;
+}
+.signup-left-styles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.signup-left-styles > h1 {
+  max-width: 30rem;
+  text-transform: uppercase;
+}
+.signup-form-layout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50px;
+  gap: 0.625rem;
+  background-color: #3f3c6d54;
+  padding: 2rem;
+  width: 90%;
+  max-width: 480px;
+  margin-bottom: 1rem;
+}
+.e-mail,
+.password,
+.user {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.signup-form > .signup {
+  display: flex;
+  justify-content: center;
+  font-size: clamp(1rem, 5vw + 1rem, 3rem);
+  font-weight: bold;
+  margin-bottom: 3rem;
+  white-space: nowrap;
+}
+.signup-form input {
+  height: 2rem;
+  outline: transparent;
+  border: 1px solid transparent;
+  padding: 1.25rem 1rem;
+  border-radius: 50px;
+  font: inherit;
+  min-width: none;
+}
+.forget-password-style {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0.875rem;
+}
+.forget-password-style > a {
+  transition: all 200ms;
+}
+.forget-password-style > a:hover {
+  text-decoration: underline;
+}
+.form-btn {
+  border-radius: 50px;
+  border: transparent;
+  background-color: #4ea4f5;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+  transition: 200ms;
+  padding: 1rem 0;
+}
+.form-btn:hover {
+  background-color: #1e3a8a;
+  color: #4ea4f5;
+}
+.form-btn:active {
+  opacity: 0.2;
+}
+.signUp-link {
+  font-size: 0.875rem;
+}
+.signUp-link > a {
+  transition: 200ms;
+}
+.signUp-link > a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 900px) {
+  .container-layout-styles {
+    flex-direction: row;
+    padding: 0 1rem;
+  }
+  .signup-left-styles {
+    width: 50vw;
+    height: 100vh;
+    margin: 0;
+  }
+  .signup-form-layout {
+    width: 50vw;
+    height: 100vh;
+  }
+  .signup-left-styles > h1 {
+    font-size: 3rem;
+  }
+}
