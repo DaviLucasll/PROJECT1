@@ -9,24 +9,31 @@
     <title>Login</title>
   </head>
   <body>
-    <main class="container">
-      <img class="login-img" src="imgs/notebook.png" alt="" />
-      <div class="login-form">
-        <span>login</span>
-        <div class="e-mail">
-          <label for="e-mail">e-mail</label>
-          <input id="e-mail" type="text" />
-        </div>
-        <div class="password">
-          <label for="password">senha</label>
-          <input id="password" type="text" />
-        </div>
-        <div class="checkbox-style">
-          <input type="checkbox" name="lembrar-me" id="lembrar-me" />
-          <label for="lembrar-me">Lembrar-me</label>
-        </div>
-        <button class="form-btn">Entrar</button>
+    <div class="container-layout-styles">
+      <div class="login-left-styles">
+        <h1>Faça Login na melhor plataforma de cursos do Brasil!</h1>
+        <img class="login-img" src="" alt="" />
       </div>
-    </main>
+      <div class="login-form-layout">
+        <form action="" class="login-form">
+          <span class="login">login</span>
+          <div class="e-mail">
+            <label for="e-mail">e-mail</label>
+            <input id="e-mail" type="email" />
+          </div>
+          <div class="password">
+            <label for="password">senha</label>
+            <input id="password" type="password" />
+          </div>
+          <div class="forget-password-style">
+            <a href="">Esqueci minha senha</a>
+          </div>
+          <button class="form-btn">Entrar</button>
+          <span class="signUp-link"
+            >Não tem conta?&nbsp; <a href="">Registre-se</a></span
+          >
+        </form>
+      </div>
+    </div>
   </body>
 </html>
