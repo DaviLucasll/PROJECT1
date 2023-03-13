@@ -13,7 +13,6 @@
 .login-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 .e-mail,
@@ -22,6 +21,8 @@
   flex-direction: column;
 }
 .login-form > span {
+  display: flex;
+  justify-content: center;
   font-size: 3rem;
   font-weight: bold;
 }
@@ -33,6 +34,25 @@
   padding: 1.25rem 1rem;
   border-radius: 50px;
   font: inherit;
+}
+.checkbox-style {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.625rem;
+}
+.form-btn {
+  padding: 1rem;
+  border-radius: 50px;
+  border: transparent;
+  background-color: #4ea4f5;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+  transition: 200ms;
+}
+.form-btn:active {
+  opacity: 0.2;
 }
 @media (min-width: 370px) {
   .login-container {
