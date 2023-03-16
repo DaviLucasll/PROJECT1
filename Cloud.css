@@ -4,9 +4,9 @@
   font-size: 2rem;
 }
 .head-title-cloud {
-  font-size: clamp(1rem, 12vw + 1rem, 3.5rem);
+  font-size: clamp(1.25rem, 8vw + 1rem, 5rem);
   color: white;
-  white-space: nowrap;
+  text-align: center;
 }
 .hero-button {
   margin: 0;
@@ -16,7 +16,8 @@
 }
 .button-container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   gap: 10px;
   margin-top: 1rem;
 }

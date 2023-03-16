@@ -33,9 +33,13 @@
 @media (min-width: 300px) {
   .footer-styles-container {
     width: 100%;
+    margin-left: 1rem;
   }
 }
 @media (min-width: 600px) {
+  .footer-styles-container {
+    margin-left: 0;
+  }
   .footer-links-container {
     flex-direction: row;
   }
