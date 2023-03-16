@@ -109,7 +109,7 @@
 @media (min-width: 900px) {
   :root {
     --fs-300: 1rem;
-    --fs-400: 1.25rem;
+    --fs-400: 1rem;
     --fs-500: 1.5rem;
     --fs-700: 1.875rem;
     --fs-xl: clamp(3.5rem, 12vw + 1rem, 8rem);

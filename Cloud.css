@@ -1,94 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
-.show-courses-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 8rem 0;
+.course-name {
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
 }
-.course-styles-container {
-  min-width: 0;
-  margin: 0 1rem;
+.head-title-cloud {
+  font-size: clamp(1rem, 12vw + 1rem, 3.5rem);
+  color: white;
+  white-space: nowrap;
 }
-#course-slide {
-  margin-top: 2rem;
+.hero-button {
+  margin: 0;
+}
+.course-description {
+  font-size: 0.875rem;
 }
 .button-container {
   display: flex;
-  gap: 1.875rem;
-  margin-bottom: 3rem;
-  margin-top: 2rem;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
 }
-.course-slide-left {
-  max-width: 800px;
+.button-paragraph {
+  max-width: 15rem;
+  font-size: 0.875rem;
+  color: white;
+  text-align: justify;
 }
-.course-slide-right {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-.course-slide-description,
-.course-slide-headline {
-  color: #fff;
-}
-.show-courses-btn,
-.course-slide-btn {
-  padding: 0.625em 1.875em;
-  font-size: 1.25rem;
-  color: #fff;
-  background-color: #4ea4f5;
-  box-sizing: border-box;
-  border: none;
-  cursor: pointer;
-  border-radius: 50px;
-  transition: 200ms;
-  flex: 0 0 10rem;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-}
-.course-slide-headline,
-.course-slide-description {
-  margin-bottom: 1.875rem;
-}
-.show-courses-btn:active,
-.course-slide-btn:active {
-  opacity: 0.8;
-}
-.course-img {
-  width: 20rem;
-  height: auto;
-}
-.course-img {
-  display: none;
-}
-@media (min-width: 300px) {
-  .course-styles-container {
-    margin: 0 2rem;
-  }
-  .course-img {
-    display: block;
-  }
-}
-@media (max-width: 660px) {
-  .button-container {
-    overflow-x: scroll;
-  }
-}
-@media (min-width: 900px) {
-  #course-slide {
-    display: flex;
-    align-items: center;
-  }
-  .course-styles-container {
-    max-width: 1120px;
-  }
-  .button-container {
-    display: flex;
-    gap: 1.875rem;
-    margin-bottom: 3rem;
-  }
-  .course-slide-headline {
-    font-size: 50px;
-  }
-  .course-img {
-    min-width: 20rem;
-  }
+.button-paragraph > span {
+  color: #4ea4f5;
+  font-weight: 700;
 }
