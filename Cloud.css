@@ -31,3 +31,79 @@
   color: #4ea4f5;
   font-weight: 700;
 }
+
+.course-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121214;
+  padding: 8rem 0;
+}
+.course-section-container {
+  max-width: 1120px;
+  margin: 0 1rem;
+}
+.course-section-texts h2,
+.course-section-texts h3,
+.course-section-texts p {
+  max-width: 12rem;
+  color: white;
+}
+.course-section-texts h3,
+.course-section-texts p {
+  margin-top: 1rem;
+}
+.structure {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-template-areas:
+    "icon title"
+    "content content";
+  color: white;
+  background-color: #121214;
+  border: 1px solid #333;
+  border-radius: 50px;
+  margin-top: 2rem;
+}
+.structure-icon {
+  display: flex;
+  justify-content: center;
+  grid-area: icon;
+  padding-top: 24px;
+}
+.structure-icon > svg {
+  width: 64px;
+  height: 64px;
+}
+.structure h4 {
+  grid-area: title;
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  line-height: 28px;
+}
+.structure p {
+  grid-area: content;
+  text-align: justify;
+  padding: 16px 34px 34px 16px;
+}
+@media (min-width: 600px) {
+  .structure {
+    grid-template-areas:
+      "icon title"
+      "icon content";
+  }
+  .structure-icon {
+    border-right: 1px solid #333;
+    margin-right: 1rem;
+    padding-top: 2rem;
+  }
+  .structure-icon > svg {
+    width: 88px;
+    height: 88px;
+  }
+  .structure p {
+    padding-left: 0;
+  }
+}
