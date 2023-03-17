@@ -42,14 +42,19 @@
   position: relative;
 }
 .course-section-texts {
-  position: -webkit-sticky;
+  position: relative;
+}
+.course-section-texts {
+  max-width: 15rem;
+}
+.course-section-texts > div {
   position: sticky;
-  top: 0;
+  position: -webkit-sticky;
+  top: 5rem;
 }
 .course-section-texts h2,
 .course-section-texts h3,
 .course-section-texts p {
-  max-width: 12rem;
   color: white;
 }
 .course-section-texts h3,
@@ -127,7 +132,7 @@
     display: inline-block;
     height: 88px;
     position: absolute;
-    bottom: -23px;
+    bottom: -18px;
   }
   .structure p {
     padding-left: 0;
@@ -139,7 +144,15 @@
     display: flex;
     justify-content: space-between;
   }
+  .course-section-texts {
+    max-width: 12;
+  }
   .structure-columns {
     margin-top: 0;
+  }
+}
+@media (min-width: 900px) AND (max-width: 1000px) {
+  .course-section-texts {
+    margin-right: 2rem;
   }
 }
