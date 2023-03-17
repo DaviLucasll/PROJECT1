@@ -48,19 +48,20 @@
   max-width: 15rem;
 }
 .course-section-texts > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   position: sticky;
   position: -webkit-sticky;
   top: 5rem;
-}
-.course-section-texts h2,
-.course-section-texts h3,
-.course-section-texts p {
   color: white;
 }
-.course-section-texts h3,
-.course-section-texts p {
-  margin-top: 1rem;
+.course-section-texts h2 {
+  color: #4ea4f5;
+  font-weight: 700;
+  font-size: 2rem;
 }
+
 .structure-columns {
   display: flex;
   flex-direction: column;
@@ -106,6 +107,11 @@
   padding: 16px 34px 34px 16px;
 }
 @media (min-width: 600px) {
+  .button-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
   .course-section-container {
     margin: 0 2rem;
   }
@@ -140,15 +146,20 @@
 }
 
 @media (min-width: 900px) {
+  .course-section {
+    display: flex;
+    justify-content: center;
+  }
   .course-section-container {
     display: flex;
-    justify-content: space-between;
+    gap: 5rem;
   }
   .course-section-texts {
     max-width: 12;
   }
   .structure-columns {
     margin-top: 0;
+    max-width: none;
   }
 }
 @media (min-width: 900px) AND (max-width: 1000px) {
