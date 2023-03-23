@@ -26,9 +26,28 @@
   gap: 1rem;
   color: #fff;
 }
+.footer-link-styles,
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-link-styles h4,
+.socials h4 {
+  font-weight: 500;
+}
+.footer-ul-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
 .footer-links-container a,
 .footer-links-container li {
   color: #ccc;
+}
+.footer-links-underline::after {
+  background-color: #b979c7;
+  height: 2px;
 }
 @media (min-width: 300px) {
   .footer-styles-container {

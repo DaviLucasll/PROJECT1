@@ -18,11 +18,18 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 :root {
-  --fs-small-text: 0.875rem;
-  --fs-normal-text: 1rem;
+  --fs-normal-text: 0.875rem;
   --fs-subtitle: 1.25rem;
   --fs-subtitle-700: 1.875rem;
-  --fs-title-700: clamp(3.5rem, 12vw + 1rem, 12rem);
+  --fs-title-700: clamp(2rem, 12vw + 1rem, 12rem);
+}
+@media (min-width: 900px) {
+  :root {
+    --fs-normal-text: 1rem;
+    --fs-subtitle: 1.5rem;
+    --fs-subtitle-700: 1.875rem;
+    --fs-xl: clamp(2rem, 12vw + 1rem, 12rem);
+  }
 }
 .links-underline-style {
   position: relative;
