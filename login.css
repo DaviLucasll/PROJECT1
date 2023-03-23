@@ -24,6 +24,7 @@
 .login-left-styles > h1 {
   max-width: 30rem;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .login-form-layout {
   width: 100%;
@@ -71,37 +72,27 @@
   justify-content: flex-start;
   font-size: 0.875rem;
 }
-.forget-password-style > a {
-  transition: all 200ms;
-}
-.forget-password-style > a:hover {
-  text-decoration: underline;
-}
 .form-btn {
   border-radius: 50px;
   border: transparent;
-  background-color: #4ea4f5;
-  color: #fff;
   font: inherit;
   cursor: pointer;
   transition: 200ms;
+  background-color: #fff;
+  font-weight: 500;
   padding: 1rem 0;
+  color: #333;
+  transition: 200ms background-color ease-in, 200ms 100ms color ease-out;
 }
 .form-btn:hover {
-  background-color: #1e3a8a;
-  color: #4ea4f5;
+  background-color: #4ea4f5;
+  color: #fff;
 }
 .form-btn:active {
   opacity: 0.2;
 }
 .signUp-link {
   font-size: 0.875rem;
-}
-.signUp-link > a {
-  transition: 200ms;
-}
-.signUp-link > a:hover {
-  text-decoration: underline;
 }
 @media (min-width: 900px) {
   .container-layout-styles {

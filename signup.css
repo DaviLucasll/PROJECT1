@@ -24,6 +24,7 @@
 .signup-left-styles > h1 {
   max-width: 30rem;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .signup-form-layout {
   width: 100%;
@@ -73,12 +74,6 @@
   justify-content: flex-start;
   font-size: 0.875rem;
 }
-.forget-password-style > a {
-  transition: all 200ms;
-}
-.forget-password-style > a:hover {
-  text-decoration: underline;
-}
 .form-btn {
   border-radius: 50px;
   border: transparent;
@@ -98,12 +93,6 @@
 }
 .signUp-link {
   font-size: 0.875rem;
-}
-.signUp-link > a {
-  transition: 200ms;
-}
-.signUp-link > a:hover {
-  text-decoration: underline;
 }
 @media (min-width: 900px) {
   .container-layout-styles {

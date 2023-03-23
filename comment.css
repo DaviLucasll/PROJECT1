@@ -1,8 +1,9 @@
 .comments-section {
-  margin: 16rem 0;
+  padding: 16rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: transparent;
 }
 .comment-section-container {
   display: flex;
@@ -30,7 +31,7 @@
 .comment-card {
   max-width: 500px;
   padding: 3rem 1rem;
-  background-color: #655cdd54;
+  background-color: #1e3a8a;
   border-radius: 50px;
 }
 .left-bottom {
@@ -51,7 +52,7 @@
   width: 5.4em;
   height: 5.4em;
   border-radius: 100%;
-  border: 3px solid #333;
+  border: 3px solid #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
