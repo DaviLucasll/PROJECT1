@@ -28,10 +28,9 @@
   text-align: justify;
 }
 .button-paragraph > span {
-  color: #4ea4f5;
+  color: #1e3a8a;
   font-weight: 700;
 }
-
 .course-section {
   background-color: #121214;
   padding: 8rem 0;
@@ -39,23 +38,20 @@
 .course-section-container {
   max-width: 1120px;
   margin: 0 1rem;
-  position: relative;
 }
 .course-section-texts {
-  position: relative;
+  max-width: 20rem;
 }
-.course-section-texts {
-  max-width: 15rem;
-}
-.course-section-texts > div {
+.course-section-texts > .sticky {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  position: sticky;
   position: -webkit-sticky;
+  position: sticky;
   top: 5rem;
   color: white;
 }
+
 .course-section-texts h2 {
   color: #4ea4f5;
   font-weight: 700;
@@ -153,9 +149,6 @@
   .course-section-container {
     display: flex;
     gap: 5rem;
-  }
-  .course-section-texts {
-    max-width: 12;
   }
   .structure-columns {
     margin-top: 0;
